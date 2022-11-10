@@ -6,7 +6,7 @@ sudo dnf update -y
 sudo dnf install discord -y
 
 #Install Jetbrains toolbox
-wget https://github.com/nagygergo/jetbrains-toolbox-install/blob/master/jetbrains-toolbox.sh
+wget https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh
 chmod u+x jetbrains-toolbox.sh
 ./jetbrains-toolbox.sh
 
@@ -18,6 +18,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #Games
 sudo dnf install unzip tar git curl xdelta cabextract libnotify webkit2gtk3 -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
 flatpak install launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher
 
 wget https://download.opensuse.org/tumbleweed/repo/oss/x86_64/libayatana-ido3-0_4-0-0.9.2-1.2.x86_64.rpm
